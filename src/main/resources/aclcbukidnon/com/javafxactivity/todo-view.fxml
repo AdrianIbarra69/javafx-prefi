@@ -6,24 +6,24 @@
 
 <VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController">
    <children>
-      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+      <HBox alignment="CENTER_LEFT" prefHeight="101.0" prefWidth="300.0" style="-fx-background-color: green;">
          <children>
       
             <!-- Button to create a new todo -->
-            <Button onAction="#onCreateClick" text="Create Todo">
+            <Button onAction="#onCreateClick" style="-fx-background-color: black;" text="Create Todo" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font></Button>
             <Pane prefHeight="100.0" prefWidth="21.0" />
 
                         <!-- Button to delete the selected todo -->
-            <Button onAction="#onDeleteClick" text="Delete Todo">
+            <Button onAction="#onDeleteClick" style="-fx-background-color: black;" text="Delete Todo" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
          </children></HBox>
       <!-- Todo List -->
-      <ListView fx:id="todoList" prefHeight="200" prefWidth="300" />
+      <ListView fx:id="todoList" prefHeight="200" prefWidth="300" style="-fx-background-color: gray;" />
 
    </children>
 </VBox>

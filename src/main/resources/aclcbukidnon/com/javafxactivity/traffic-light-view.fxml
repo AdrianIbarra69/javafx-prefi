@@ -4,17 +4,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<VBox alignment="CENTER" prefHeight="295.0" prefWidth="367.0" spacing="20" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TrafficLightController">
-   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="23.0">
-      <children>
-         <Circle fx:id="greenLight" fill="GRAY" radius="50" />
-         <Circle fx:id="yellowLight" fill="GRAY" radius="50" />
-         <!-- Traffic Light Circles -->
-         <Circle fx:id="redLight" fill="GRAY" radius="50" />
-      </children>
-   </HBox>
+<VBox alignment="CENTER" prefHeight="489.0" prefWidth="186.0" spacing="20" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TrafficLightController">
+
+   <!-- Traffic Light Circles -->
+   <Circle fx:id="redLight" fill="GRAY" radius="50.0" stroke="WHITE" strokeType="INSIDE" />
+   <Circle fx:id="yellowLight" fill="GRAY" radius="50.0" stroke="WHITE" strokeType="INSIDE" />
+   <Circle fx:id="greenLight" fill="GRAY" radius="50.0" stroke="WHITE" strokeType="INSIDE" />
 
    <!-- Control Buttons -->
-   <Button fx:id="startButton" onAction="#onStartButtonClick" text="Start" />
-   <Button fx:id="stopButton" onAction="#onStopButtonClick" text="Stop" />
+   <HBox spacing="10" alignment="CENTER">
+      <Button fx:id="startButton" onAction="#onStartButtonClick" style="-fx-background-color: brown;" text="Start" textFill="WHITE" />
+      <Button fx:id="stopButton" onAction="#onStopButtonClick" style="-fx-background-color: brown;" text="Stop" textFill="WHITE" />
+   </HBox>
 </VBox>
+
